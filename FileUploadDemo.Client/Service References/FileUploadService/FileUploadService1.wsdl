@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FileUploadService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/FileUploadDemoServer/FileUploadService/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/FileUploadDemoServer/FileUploadService/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/FileUploadDemoServer/FileUploadService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FileUploadDemoServer" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFileUploadService_CreateBlobFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateBlobFile" />
+  </wsdl:message>
+  <wsdl:message name="IFileUploadService_CreateBlobFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateBlobFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileUploadService_AddBlobFileChunk_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBlobFileChunk" />
+  </wsdl:message>
+  <wsdl:message name="IFileUploadService_AddBlobFileChunk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBlobFileChunkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileUploadService_DeleteBlobFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBlobFile" />
+  </wsdl:message>
+  <wsdl:message name="IFileUploadService_DeleteBlobFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBlobFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileUploadService_GetBlobFiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBlobFiles" />
+  </wsdl:message>
+  <wsdl:message name="IFileUploadService_GetBlobFiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBlobFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileUploadService_ProcessFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessFile" />
+  </wsdl:message>
+  <wsdl:message name="IFileUploadService_ProcessFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileUploadService_SaveFileAs_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveFileAs" />
+  </wsdl:message>
+  <wsdl:message name="IFileUploadService_SaveFileAs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveFileAsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IFileUploadService">
+    <wsdl:operation name="CreateBlobFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileUploadService/CreateBlobFile" message="tns:IFileUploadService_CreateBlobFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileUploadService/CreateBlobFileResponse" message="tns:IFileUploadService_CreateBlobFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBlobFileChunk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileUploadService/AddBlobFileChunk" message="tns:IFileUploadService_AddBlobFileChunk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileUploadService/AddBlobFileChunkResponse" message="tns:IFileUploadService_AddBlobFileChunk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBlobFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileUploadService/DeleteBlobFile" message="tns:IFileUploadService_DeleteBlobFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileUploadService/DeleteBlobFileResponse" message="tns:IFileUploadService_DeleteBlobFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBlobFiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileUploadService/GetBlobFiles" message="tns:IFileUploadService_GetBlobFiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileUploadService/GetBlobFilesResponse" message="tns:IFileUploadService_GetBlobFiles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileUploadService/ProcessFile" message="tns:IFileUploadService_ProcessFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileUploadService/ProcessFileResponse" message="tns:IFileUploadService_ProcessFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveFileAs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileUploadService/SaveFileAs" message="tns:IFileUploadService_SaveFileAs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileUploadService/SaveFileAsResponse" message="tns:IFileUploadService_SaveFileAs_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IFileUploadService" type="tns:IFileUploadService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateBlobFile">
+      <soap:operation soapAction="http://tempuri.org/IFileUploadService/CreateBlobFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBlobFileChunk">
+      <soap:operation soapAction="http://tempuri.org/IFileUploadService/AddBlobFileChunk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBlobFile">
+      <soap:operation soapAction="http://tempuri.org/IFileUploadService/DeleteBlobFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBlobFiles">
+      <soap:operation soapAction="http://tempuri.org/IFileUploadService/GetBlobFiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessFile">
+      <soap:operation soapAction="http://tempuri.org/IFileUploadService/ProcessFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveFileAs">
+      <soap:operation soapAction="http://tempuri.org/IFileUploadService/SaveFileAs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FileUploadService">
+    <wsdl:port name="BasicHttpBinding_IFileUploadService" binding="tns:BasicHttpBinding_IFileUploadService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/FileUploadDemoServer/FileUploadService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

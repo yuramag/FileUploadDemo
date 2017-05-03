@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8025fb50-0d53-4c7d-a76a-c78bac159423" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/FileUploadDemoServer/FileUploadService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="4464f441-85a1-4908-adf2-43fd4c7c6eb4" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FileUploadDemoServer/FileUploadService/?xsd=xsd2" />
+    <MetadataFile FileName="item31.xsd" MetadataType="Schema" ID="4079d37d-8c79-4657-bed2-2113b5fedd01" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FileUploadDemoServer/FileUploadService/?xsd=xsd0" />
+    <MetadataFile FileName="FileUploadService1.wsdl" MetadataType="Wsdl" ID="1fba454c-19e7-40a1-9b4f-ec70e1f3f83d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FileUploadDemoServer/FileUploadService/?wsdl" />
+    <MetadataFile FileName="item32.xsd" MetadataType="Schema" ID="8e5a6e7b-a62c-414e-b260-4858558a0cc3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FileUploadDemoServer/FileUploadService/?xsd=xsd1" />
+    <MetadataFile FileName="item1.disco" MetadataType="Disco" ID="931c468c-9643-47e4-bfac-1a9f498b2a3e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/FileUploadDemoServer/FileUploadService/?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
